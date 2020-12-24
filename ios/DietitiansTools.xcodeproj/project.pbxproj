@@ -20,6 +20,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AADB85370774AE4FC73224E4 /* libPods-DietitiansTools-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 473D36DB096EA6F6FCE36BEC /* libPods-DietitiansTools-tvOS.a */; };
 		C53170BE36231DA65DED8D78 /* libPods-DietitiansTools-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 567BF921D15199F831A8D600 /* libPods-DietitiansTools-tvOSTests.a */; };
+		C95CD0D3259440A60000890F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95CD0D2259440A60000890F /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		C12D43C5DF9648AEA14F2A27 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		C5CC8A2A1F93056F43B8E2BF /* libPods-DietitiansTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietitiansTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CAF9694B01EE2ADAAF1114 /* Pods-DietitiansTools-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietitiansTools-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DietitiansTools-tvOSTests/Pods-DietitiansTools-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C95CD0D2259440A60000890F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		CB3AC604548E45BB8C61E97E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		D7D3217C83734C429E592B66 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		E4E589BB25CE17D3353B6FA1 /* libPods-DietitiansTools-DietitiansToolsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietitiansTools-DietitiansToolsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				C95CD0D2259440A60000890F /* Media.xcassets */,
 				13B07FAE1A68108700A75B9A /* DietitiansTools */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* DietitiansToolsTests */,
@@ -333,6 +336,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = PW62ZB8Y7H;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -380,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				C95CD0D3259440A60000890F /* Media.xcassets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -758,7 +763,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = PW62ZB8Y7H;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DietitiansTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -768,7 +774,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kinnerethllc.dietitianstools;
 				PRODUCT_NAME = DietitiansTools;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -782,7 +788,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
+				DEVELOPMENT_TEAM = PW62ZB8Y7H;
 				INFOPLIST_FILE = DietitiansTools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -791,7 +798,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kinnerethllc.dietitianstools;
 				PRODUCT_NAME = DietitiansTools;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -818,7 +825,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DietitiansTools-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kinnerethllc.dietitianstools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -846,7 +853,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DietitiansTools-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = org.kinnerethllc.dietitianstools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
